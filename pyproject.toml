@@ -4,7 +4,7 @@ version = "0.1.0"
 description = ""
 authors = ["Denis Kustov <you@example.com>"]
 readme = "README.md"
-packages = [{include = "fast_search"}]
+packages = [{include = "flsr"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"

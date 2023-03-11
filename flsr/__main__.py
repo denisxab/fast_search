@@ -1,7 +1,7 @@
 import argparse
 import time
 
-from fast_search.lib_search import delete_old_indexes
+from .lib_search import delete_old_indexes
 
 from .lib_search import create_table, index_files, list_index, search_files
 
