@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "flsr"
+version = "0.1.0"
+description = ""
+authors = ["Denis Kustov <you@example.com>"]
+readme = "README.md"
+packages = [{include = "fast_search"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+tqdm = "^4.65.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
