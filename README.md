@@ -23,9 +23,9 @@ pip install flsr
 
 Утилита принимает следующие аргументы:
 
-- `directory` - Путь к директории, которую нужно проиндексировать. Пример использования: `python -m flsr index /home/user/docs`
-- `query` - Имя файла для поиска. Пример использования: `python -m flsr search myfile.txt`
-- `days` - Количество дней, после которых необходимо удалить индексы. Пример использования: `python -m flsr delete 30`
+- `directory` - Путь к директории, которую нужно проиндексировать. Пример использования: `python -m flsr i /home/user/docs`
+- `query` - Имя файла для поиска. Пример использования: `python -m flsr s myfile.txt`
+- `days` - Количество дней, после которых необходимо удалить индексы. Пример использования: `python -m flsr d --days 30`
 
 ### Примеры
 
@@ -34,7 +34,7 @@ pip install flsr
 Для индексации директории необходимо выполнить команду `index (i)` и указать путь к директории, которую нужно проиндексировать:
 
 ```bash
-python -m flsr index /home/user/docs
+python -m flsr i /home/user/docs
 ```
 
 #### Поиск файла
@@ -42,13 +42,13 @@ python -m flsr index /home/user/docs
 Для поиска файла в индексе необходимо выполнить команду `search (s)` и указать имя файла для поиска:
 
 ```bash
-python -m flsr search myfile.txt
+python -m flsr s myfile.txt
 ```
 
 Также возможно выполнить поиск файлов по типу с помощью аргумента `--type` (расширения файла). Например, чтобы найти все файлы с расширением `.pdf`, нужно выполнить следующую команду:
 
 ```bash
-python -m flsr search myfile.txt --type '.pdf;
+python -m flsr s myfile.txt --type '.pdf;
 ```
 
 Аргумент `--type` является необязательным. Если он не указан, то поиск будет осуществляться по всем файлам.
@@ -58,7 +58,7 @@ python -m flsr search myfile.txt --type '.pdf;
 Для вывода списка всех индексов необходимо выполнить команду `list_index (l)`:
 
 ```bash
-python -m flsr list_index
+python -m flsr l
 ```
 
 #### Удаление старых индексов
@@ -66,7 +66,7 @@ python -m flsr list_index
 В данном примере будут удалены все индексы, созданные более 30 дней назад:
 
 ```bash
-python -m flsr delete --days 30
+python -m flsr d --days 30
 ```
 
 ## Функции

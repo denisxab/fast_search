@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "flsr"
-version = "0.1.0"
+version = "0.1.1"
 description = ""
 authors = ["Denis Kustov <you@example.com>"]
 readme = "README.md"
@@ -14,3 +14,7 @@ tqdm = "^4.65.0"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+my-script = "flsr.__main__:main"
